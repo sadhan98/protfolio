@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800;900&family=Roboto:ital,wght@1,100;1,400&display=swap");
+
+:root {
+  --primary-light: #06b6d4;
+  --primary-dark: #3b82f6;
+}
+.icon {
+  color: var(--primary-dark);
+}
+@layer base {
+  body {
+    @apply font-[Roboto];
+  }
+  li {
+    @apply p-4 text-xl;
+  }
+  h1 {
+    @apply text-3xl md:text-5xl font-bold;
+  }
+  h2 {
+    @apply text-3xl  md:text-4xl font-bold;
+  }
+  h3 {
+    @apply text-2xl  font-bold;
+  }
+  button {
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md;
+  }
+  .icon {
+    @apply text-3xl cursor-pointer;
+  }
+}
